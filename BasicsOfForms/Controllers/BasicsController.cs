@@ -20,5 +20,10 @@ namespace BasicsOfForms.Controllers
             int i = 0; 
             return View();
         }
+
+        public ActionResult Razor()
+        {
+            return View();
+        }
     }
 }
