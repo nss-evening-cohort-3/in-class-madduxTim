@@ -1,4 +1,7 @@
 ﻿var app = angular.module("BasicsOfForms", []);
-app.controller("blah", function ($scope) {
-    $scope.not_working = "totally working fine!";
+app.controller("FormController", function ($scope) {
+    $scope.formSubmit = function(event) {
+        alert("Barf!");
+        event.preventDefault();
+    }   
 });
