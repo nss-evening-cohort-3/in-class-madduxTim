@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Razor";
+}
+<h2>Razor</h2>
+@using (Html.BeginForm("Razor", "Basics", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.TextBox("email")
+    @Html.TextBox("password")
+    @Html.TextBox("passwordconfirmation")
+    <input type="submit" value="Submit!" />
+}
+
