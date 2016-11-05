@@ -5,12 +5,12 @@
 
 <h2>Angular</h2>
 <div ng-controller="FormController">
-    @using (Html.BeginForm("Angular", "Basics", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    @using (Html.BeginForm("Angular", "Basics", FormMethod.Post, new { id="myform" }))
     {
         @Html.AntiForgeryToken()
         @Html.TextBox("email")
         @Html.TextBox("password")
         @Html.TextBox("passwordconfirmation")
-        <button type="submit" ng-click="formSubmit()">Submit!</button>
+        <button type="submit" ng-click="formSubmit($event)">Submit!</button>
     }
 </div>

@@ -9,6 +9,10 @@ namespace BasicsOfForms.Controllers
 {
     public class AngularApiController : ApiController
     {
+        public void Post([FromBody]dynamic value)
+        {
+
+        }
         //// GET api/<controller>
         //public IEnumerable<string> Get()
         //{
@@ -22,9 +26,6 @@ namespace BasicsOfForms.Controllers
         //}
 
         // POST api/<controller>
-        public void Post([FromBody]dynamic value)
-        {
-        }
 
         //// PUT api/<controller>/5
         //public void Put(int id, [FromBody]string value)
