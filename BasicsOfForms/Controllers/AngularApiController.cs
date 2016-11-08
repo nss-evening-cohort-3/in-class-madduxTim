@@ -11,7 +11,7 @@ namespace BasicsOfForms.Controllers
     {
         public void Post([FromBody]dynamic value)
         {
-
+            string blah = ""; 
         }
         //// GET api/<controller>
         //public IEnumerable<string> Get()

@@ -11,6 +11,6 @@
         @Html.TextBox("Email","", new { ng_model="user.email"}) 
         @Html.Password("Password","", new { ng_model = "user.password" })
         @Html.Password("PasswordConfirmation","", new { ng_model = "user.passwordconfirmation" }) 
-        <button ng-click="formSubmit($event)">Submit</button>
+        <input type="submit" ng-click="formSubmit($event)" value="Submit" />
     }
 </div>
